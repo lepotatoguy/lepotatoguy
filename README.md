@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Hi <img  src="https://github.com/lepotatoguy/lepotatoguy/blob/master/hi.gif" width="65px">, I'm Joyanta</h1>
-<h3 align="center">An enthusiast about Machine Learning</h3>
+<h3 align="center">An enthusiast about Machine Learning, Deep Learning</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lepotatoguy&label=Profile%20views&color=0e75b6&style=flat" alt="lepotatoguy" /> </p>
 
