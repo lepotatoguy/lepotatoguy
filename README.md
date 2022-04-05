@@ -13,6 +13,8 @@
 
 - 📄 Know about my experiences [https://joyantamondal.com/about.html](https://joyantamondal.com/about.html)
 
+- 📄 Research Profile: [Google Scholar](https://joyantamondal.com/about.html)
+
 - ⚡ Fun fact **I love memes**
 
 <h3 align="left">Connect with me:</h3>
