@@ -13,7 +13,7 @@
 
 - 📄 Know about my experiences [https://joyantamondal.com/about.html](https://joyantamondal.com/about.html)
 
-- 📄 Research Profile: [Google Scholar](https://joyantamondal.com/about.html)
+- 📄 Research Profile: [Google Scholar](https://scholar.google.com/citations?user=lIwU1F0AAAAJ&hl=en&authuser=1)
 
 - ⚡ Fun fact **I love memes**
 
