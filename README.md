@@ -9,7 +9,7 @@
 
 - 👨‍💻 All of my projects are available at [joyantamondal.com](joyantamondal.com)
 
-- 📫 How to reach me **hello@joyantamondal.com**
+- 📫 How to reach me **joyanta DOT csebracu AT gmail DOT com**
 
 - 📄 Know about my experiences [https://joyantamondal.com/about.html](https://joyantamondal.com/about.html)
 
