@@ -7,11 +7,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lepotatoguy&label=Profile%20views&color=0e75b6&style=flat" alt="lepotatoguy" /> </p>
 
-- 👨‍💻 All of my projects are available at [joyantamondal.com](joyantamondal.com)
-
 - 📫 How to reach me **joyanta DOT csebracu AT gmail DOT com**
 
-- 📄 Know about my experiences [https://joyantamondal.com/about.html](https://joyantamondal.com/about.html)
+- 📄 Know about my experiences [https://lepotatoguy.github.io](https://lepotatoguy.github.io)
 
 - 📄 Research Profile: [Google Scholar](https://scholar.google.com/citations?user=lIwU1F0AAAAJ&hl=en&authuser=1)
 
