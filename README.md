@@ -7,7 +7,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lepotatoguy&label=Profile%20views&color=0e75b6&style=flat" alt="lepotatoguy" /> </p>
 
-- 📫 How to reach me **joyanta DOT csebracu AT gmail DOT com**
+- 📫 How to reach me **mjoyanta DOT cs AT gmail DOT com**
 
 - 📄 Know about my experiences [https://lepotatoguy.github.io](https://lepotatoguy.github.io)
 
