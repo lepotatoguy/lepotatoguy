@@ -34,8 +34,8 @@
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=lepotatoguy&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=lepotatoguy&show_icons=true&locale=en&layout=compact" alt="lepotatoguy" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=lepotatoguy&show_icons=true&locale=en&layout=compact&theme=transparent" alt="lepotatoguy" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lepotatoguy&show_icons=true&locale=en&theme=transparent" alt="lepotatoguy" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lepotatoguy&" alt="lepotatoguy" /></p>
+<!-- <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lepotatoguy&" alt="lepotatoguy" /></p> -->
