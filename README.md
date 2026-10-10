@@ -19,3 +19,4 @@
 
 - ⚡ Fun fact **I love memes**
 
+![Most Used Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=lepotatoguy&layout=compact&theme=transparent&hide_border=true)
