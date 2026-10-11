@@ -1,0 +1,24 @@
+{
+  "areas": [
+    {
+      "label": "ai",
+      "score": 8
+    },
+    {
+      "label": "cloud computing",
+      "score": 6
+    },
+    {
+      "label": "computer vision",
+      "score": 7
+    },
+    {
+      "label": "research",
+      "score": 8
+    },
+    {
+      "label": "hci",
+      "score": 5
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 510" width="880" height="510" font-family="ui-monospace,'SFMono-Regular','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace">
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#58a6ff" stop-opacity="0.4"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></linearGradient></defs>
+<style>
+.fade{animation:fade .9s ease both}
+@keyframes fade{from{opacity:0}}
+.blink{animation:blink 1.1s steps(2,start) infinite}
+@keyframes blink{50%{opacity:0}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{transform:scale(.55);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+.draw{stroke-dasharray:700;animation:draw 2.4s ease both .3s}
+@keyframes draw{from{stroke-dashoffset:700}to{stroke-dashoffset:0}}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 1.4s ease both .4s}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flicker 1.5s ease-in-out infinite}
+@keyframes flicker{0%,100%{transform:scale(1)}30%{transform:scale(.93,1.07)}62%{transform:scale(1.05,.96)}}
+.flame-core{transform-box:fill-box;transform-origin:50% 100%;animation:ember 1.5s ease-in-out infinite}
+@keyframes ember{0%,100%{opacity:.75;transform:scale(.9)}45%{opacity:1;transform:scale(1.08)}}
+</style>
+<text x="10" y="26" font-size="12" fill="#58a6ff" font-weight="600" letter-spacing="3" class="fade">02: system map</text>
+<line x1="158" y1="21" x2="870" y2="21" stroke="#30363d"/>
+<line x1="440" y1="232" x2="440" y2="86" stroke="#30363d" stroke-dasharray="3 5"/>
+<circle cx="440" cy="86" r="3.5" fill="#58a6ff"/>
+<text x="440" y="72" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">ai</text>
+<line x1="481.8" y1="262.4" x2="620.7" y2="217.3" stroke="#30363d" stroke-dasharray="3 5"/>
+<circle cx="620.7" cy="217.3" r="3.5" fill="#58a6ff"/>
+<text x="620.7" y="203.3" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">cloud computing</text>
+<line x1="465.9" y1="311.6" x2="551.7" y2="429.7" stroke="#30363d" stroke-dasharray="3 5"/>
+<circle cx="551.7" cy="429.7" r="3.5" fill="#58a6ff"/>
+<text x="551.7" y="415.7" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">computer vision</text>
+<line x1="414.1" y1="311.6" x2="328.3" y2="429.7" stroke="#30363d" stroke-dasharray="3 5"/>
+<circle cx="328.3" cy="429.7" r="3.5" fill="#58a6ff"/>
+<text x="328.3" y="415.7" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">research</text>
+<line x1="398.2" y1="262.4" x2="259.3" y2="217.3" stroke="#30363d" stroke-dasharray="3 5"/>
+<circle cx="259.3" cy="217.3" r="3.5" fill="#58a6ff"/>
+<text x="259.3" y="203.3" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">hci</text>
+<polygon class="fade" points="440,124 548.4,240.8 518.2,383.6 350.7,399 349.6,246.6" fill="#58a6ff" fill-opacity="0.16"/>
+<polygon class="draw" pathLength="700" points="440,124 548.4,240.8 518.2,383.6 350.7,399 349.6,246.6" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="440" cy="124" r="3" fill="#58a6ff"/>
+<circle cx="548.4" cy="240.8" r="3" fill="#58a6ff"/>
+<circle cx="518.2" cy="383.6" r="3" fill="#58a6ff"/>
+<circle cx="350.7" cy="399" r="3" fill="#58a6ff"/>
+<circle cx="349.6" cy="246.6" r="3" fill="#58a6ff"/>
+<circle class="ping" cx="440" cy="276" r="26" fill="none" stroke="#58a6ff"/>
+<rect x="373" y="261" width="134" height="30" rx="6" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="440" y="280" font-size="12" fill="#e6edf3" font-weight="700" text-anchor="middle" letter-spacing="1">lepotatoguy</text>
+</svg>
