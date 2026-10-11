@@ -12,7 +12,7 @@
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { collectResearchStatus } from "./research-status.mjs";
+import { collectResearchStatus, formatCentralTime } from "./research-status.mjs";
 
 const USER = "lepotatoguy";
 
@@ -333,7 +333,7 @@ const shortText = (s, max) => [...s].length > max ? [...s].slice(0, max - 3).joi
 const footerSVG = (c, status, checked) => `${svgOpen(108, c)}
 <line x1="10" y1="12" x2="870" y2="12" stroke="${c.line}" stroke-width="1"/>
 <text x="30" y="56" font-size="14" fill="${c.fg}" font-weight="600">${esc(shortText(`${status.title}: ${status.message}${status.context ? ` (@ ${status.context})` : ""}`, 90))}</text>
-<text x="30" y="84" font-size="11" fill="${c.mut}">${esc(status.detail)} · checked ${checked.toISOString().slice(0,10)} UTC · automatic refresh</text>
+<text x="30" y="84" font-size="11" fill="${c.mut}">${esc(status.detail)} · checked ${formatCentralTime(checked, false)} · automatic refresh</text>
 <circle class="ping" cx="850" cy="52" r="6" fill="none" stroke="${c.acc}"/>
 <circle cx="850" cy="52" r="2.5" fill="${c.acc}"/>
 </svg>

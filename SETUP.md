@@ -62,3 +62,5 @@ Install .github/templates/research-profile-push.yml as .github/workflows/researc
 The relay sends no repository names, commit messages or file contents. GitHub queues a footer refresh after each push; startup and image cache delays mean the visible badge is not instantaneous. Commits must reach GitHub; local commits cannot trigger a hosted workflow. New repositories need the relay installed too.
 
 Source: [GitHub workflow dispatch permissions](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event).
+
+Footer timestamps use America/Chicago, automatically switching between CST and CDT, including local date rollover. Every viewer sees this same Central Time. Formatting uses built-in Intl support in the existing generator; no additional service or dependency.

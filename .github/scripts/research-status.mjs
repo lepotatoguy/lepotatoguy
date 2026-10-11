@@ -1,3 +1,12 @@
+export function formatCentralTime(value, includeTime = true) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZoneName: 'short',
+  }).formatToParts(new Date(value)).map(({ type, value }) => [type, value]));
+  const date = `${parts.year}-${parts.month}-${parts.day}`;
+  return `${date}${includeTime ? ` ${parts.hour}:${parts.minute}` : ''} ${parts.timeZoneName}`;
+}
+
 // Read pushed workflow ledgers; publish only allowlisted stage labels and dates.
 const STAGES = {
   'lit-review': ['Exploring research literature', 'Reviewed research literature'],
@@ -82,5 +91,5 @@ export async function collectResearchStatus({ user, token = process.env.RESEARCH
   candidates.sort((a, b) => Date.parse(b.updated) - Date.parse(a.updated));
   if (!candidates.length) return unavailable;
   const latest = candidates[0];
-  return { title: 'Recent task', message: latest.message, context: latest.context, detail: `Latest commit ${latest.updated.slice(0, 16).replace('T', ' ')} UTC` };
+  return { title: 'Recent task', message: latest.message, context: latest.context, detail: `Latest commit ${formatCentralTime(latest.updated)}` };
 }
