@@ -18,11 +18,11 @@
 </style>
 <text x="10" y="26" font-size="12" fill="#58a6ff" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">04: telemetry</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
 <text x="30" y="92" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="1.2">contributions</text>
-<text x="30" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">1,320</text>
+<text x="30" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">1,321</text>
 <text x="30" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">since may 2018</text>
 <text x="155" y="92" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="1.2">repositories</text>
-<text x="155" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">217</text>
-<text x="155" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">public</text>
+<text x="155" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">105</text>
+<text x="155" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">public + private</text>
 <text x="280" y="92" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="1.2">followers</text>
 <text x="280" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">52</text>
 <text x="280" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">and counting</text>
@@ -31,7 +31,7 @@
 <text x="405" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">4</text>
 <text x="405" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">days in a row</text>
 <text x="540" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">contributions · 28 days</text>
-<polyline class="draw" pathLength="700" points="540,137.68421052631578 551.8518518518518,124 563.7037037037037,119.89473684210526 575.5555555555555,114.42105263157895 587.4074074074074,124 599.2592592592592,98 611.1111111111111,144.52631578947367 622.9629629629629,140.42105263157896 634.8148148148148,139.05263157894737 646.6666666666666,145.89473684210526 658.5185185185185,150 670.3703703703704,150 682.2222222222222,115.78947368421052 694.0740740740741,117.15789473684211 705.9259259259259,145.89473684210526 717.7777777777778,150 729.6296296296296,136.31578947368422 741.4814814814815,150 753.3333333333334,141.78947368421052 765.1851851851852,150 777.0370370370371,145.89473684210526 788.8888888888889,150 800.7407407407408,150 812.5925925925926,133.57894736842104 824.4444444444445,130.8421052631579 836.2962962962963,137.68421052631578 848.1481481481482,132.21052631578948 860,150" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+<polyline class="draw" pathLength="700" points="540,137.68421052631578 551.8518518518518,124 563.7037037037037,119.89473684210526 575.5555555555555,114.42105263157895 587.4074074074074,124 599.2592592592592,98 611.1111111111111,144.52631578947367 622.9629629629629,140.42105263157896 634.8148148148148,139.05263157894737 646.6666666666666,145.89473684210526 658.5185185185185,150 670.3703703703704,150 682.2222222222222,115.78947368421052 694.0740740740741,117.15789473684211 705.9259259259259,145.89473684210526 717.7777777777778,150 729.6296296296296,136.31578947368422 741.4814814814815,150 753.3333333333334,141.78947368421052 765.1851851851852,150 777.0370370370371,145.89473684210526 788.8888888888889,150 800.7407407407408,150 812.5925925925926,133.57894736842104 824.4444444444445,130.8421052631579 836.2962962962963,137.68421052631578 848.1481481481482,130.8421052631579 860,150" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
 <circle class="ping" cx="860" cy="150" r="6" fill="none" stroke="#58a6ff" stroke-width="1"/>
 <circle cx="860" cy="150" r="2.5" fill="#58a6ff"/>
 <text x="540" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="start">09-14</text>
