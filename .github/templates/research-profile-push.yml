@@ -1,0 +1,18 @@
+# Install as .github/workflows/research-profile-push.yml in a watched research repo.
+name: Refresh research profile
+on:
+  push:
+permissions: {}
+concurrency:
+  group: research-profile-notify
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a footer refresh
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_REFRESH_TOKEN }}
+        run: |
+          gh api --method POST repos/lepotatoguy/lepotatoguy/actions/workflows/telemetry.yml/dispatches \
+            -f ref=master -F inputs[footer_only]=true > /dev/null

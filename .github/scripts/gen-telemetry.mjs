@@ -332,14 +332,25 @@ ${axes.map((a) => `<circle cx="${coordinate(440 + 190 * a.score / 10 * a.dx)}" c
 const shortText = (s, max) => [...s].length > max ? [...s].slice(0, max - 3).join("") + "..." : s;
 const footerSVG = (c, status, checked) => `${svgOpen(108, c)}
 <line x1="10" y1="12" x2="870" y2="12" stroke="${c.line}" stroke-width="1"/>
-<text x="30" y="56" font-size="14" fill="${c.fg}" font-weight="600">${esc(shortText(`${status.title}: ${status.message}`, 90))}</text>
-<text x="30" y="84" font-size="11" fill="${c.mut}">${esc(status.detail)} · checked ${checked.toISOString().slice(0,10)} UTC · refreshes daily</text>
+<text x="30" y="56" font-size="14" fill="${c.fg}" font-weight="600">${esc(shortText(`${status.title}: ${status.message}${status.context ? ` (@ ${status.context})` : ""}`, 90))}</text>
+<text x="30" y="84" font-size="11" fill="${c.mut}">${esc(status.detail)} · checked ${checked.toISOString().slice(0,10)} UTC · automatic refresh</text>
 <circle class="ping" cx="850" cy="52" r="6" fill="none" stroke="${c.acc}"/>
 <circle cx="850" cy="52" r="2.5" fill="${c.acc}"/>
 </svg>
 `;
 
 // ── main ────────────────────────────────────────────────────────
+if (process.argv.includes("--footer-only")) {
+  if (!process.env.RESEARCH_STATUS_TOKEN) throw new Error("RESEARCH_STATUS_TOKEN is required for footer refresh");
+  const status = await collectResearchStatus({ user: USER });
+  const checked = new Date();
+  mkdirSync(ASSETS, { recursive: true });
+  for (const theme of ["dark", "light"])
+    writeFileSync(resolve(ASSETS, `footer-${theme}.svg`), footerSVG(THEME[theme], status, checked));
+  console.log("Research footer refreshed");
+  process.exit(0);
+}
+
 const data = await collect();
 const contrib = data.contributions.toLocaleString("en-US");
 const since = `since ${MONTHS[data.since.getUTCMonth()]} ${data.since.getUTCFullYear()}`;

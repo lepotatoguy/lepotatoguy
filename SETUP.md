@@ -28,7 +28,7 @@ Sources: [GitHub language API permissions](https://docs.github.com/en/rest/repos
 
 ## Automated research footer
 
-The footer reads research/STATE.md from the default branch of each accessible owned repository. It chooses the most recently committed recognized stage. Dates come from the commit that updated that file, rather than unrelated activity in the repository. Forks, archived repositories and the profile repository are excluded.
+The footer reads research/STATE.md from the default branch of each accessible owned repository. It chooses the repository with the latest default-branch commit and a recognized stage. The ledger is read at that exact commit. Private repositories display @ private; public repositories display their name. Commit messages are not published. Forks, archived repositories and the profile repository are excluded.
 
 One-time setup:
 
@@ -39,9 +39,9 @@ One-time setup:
 
 The reader accepts explicit stage, current_stage, pipeline_stage or phase fields, including Markdown bullets and bold formatting. Recognized values: lit-review, gap-analysis, experiment-design, experiment-explore, experiment-run, writeup and revision. The research workflow maintains those fields; the footer does not edit or advance your pipeline.
 
-A done/completed state uses completed wording; paused or blocked states use generic labels. Unknown or ambiguous stages are skipped. Only fixed stage phrases and the file update date are published. Private repository names, paper titles, findings, commit messages and state-file text are never written to the profile or logs.
+A done/completed state uses completed wording; paused or blocked states use generic labels. Unknown or ambiguous stages are skipped. Only fixed stage phrases, commit dates and public repository names are published. Private repositories use @ private. Private repository names, paper titles, findings, commit messages and state-file text are never written to the profile or logs.
 
-Without RESEARCH_STATUS_TOKEN, daily runs preserve the packaged footer and its original check date. With a configured token but no recognized pushed state, the footer says Workflow state unavailable. A failed API request stops the refresh before assets are written, preserving the published footer. The last source-update date remains visible, so old stages are not presented as newly updated work. The date of the last bot check and daily refresh note remain.
+Without RESEARCH_STATUS_TOKEN, daily runs preserve the packaged footer and its original check date. With a configured token but no recognized pushed state, the footer says Workflow state unavailable. A failed API request stops the refresh before assets are written, preserving the published footer. The last source-update date remains visible, so old stages are not presented as newly updated work. The date of the last bot check remains.
 
 Local verification used Joy's existing GitHub authentication. Actions requires the secrets above. Reading private ledgers requires broader access than the Metadata-only language collector; keep these secrets separate.
 
@@ -52,3 +52,13 @@ Sources: [GitHub content API](https://docs.github.com/en/rest/repos/contents#get
 The package adapts Sakif16's original README, SVG panels and telemetry generator, with GitHub blue accents and personalized content. The streak flame retains the source red and orange colors. Research is section 03; telemetry is section 04.
 
 The system map retains five confirmed lowercase areas. Hidden scores determine its polygon. Edit areas in .github/profile.json to change the map. The Python class uses portfolio skills; domains summarize the selected papers. Research entries link to eight selected publications, with verified published titles and journal issue years.
+
+## Push-triggered footer refresh
+
+The profile workflow accepts footer_only=true through workflow_dispatch. This refreshes only the footer. Daily telemetry remains enabled as a fallback.
+
+Install .github/templates/research-profile-push.yml as .github/workflows/research-profile-push.yml in each watched research repository. Add PROFILE_REFRESH_TOKEN to each watched repository's encrypted Actions secrets. Use a separate fine-grained token restricted to lepotatoguy/lepotatoguy with Actions: write and required Metadata: read. It cannot read private research code. The existing read-only tokens remain separate.
+
+The relay sends no repository names, commit messages or file contents. GitHub queues a footer refresh after each push; startup and image cache delays mean the visible badge is not instantaneous. Commits must reach GitHub; local commits cannot trigger a hosted workflow. New repositories need the relay installed too.
+
+Source: [GitHub workflow dispatch permissions](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event).

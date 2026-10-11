@@ -31,7 +31,7 @@ export function parseResearchState(text) {
 
 export async function collectResearchStatus({ user, token = process.env.RESEARCH_STATUS_TOKEN,
   repositories = process.env.RESEARCH_STATUS_REPOS || '', statePath = 'research/STATE.md', fetchImpl = fetch }) {
-  const unavailable = { title: 'Recent research focus', message: 'Workflow state unavailable', detail: 'No recognized pushed stage available' };
+  const unavailable = { title: 'Recent task', message: 'Workflow state unavailable', detail: 'No recognized pushed stage available' };
   if (!token) return { ...unavailable, detail: 'Research state connection not configured' };
   async function gh(path, allowMissing = false, allowEmpty = false) {
     const response = await fetchImpl(`https://api.github.com${path}`, {
@@ -68,7 +68,7 @@ export async function collectResearchStatus({ user, token = process.env.RESEARCH
   await Promise.all(Array.from({ length: Math.min(4, selected.length) }, async () => {
     while (next < selected.length) {
       const repo = selected[next++];
-      const commits = await gh(`/repos/${repo.full_name}/commits?path=${encodeURIComponent(statePath)}&sha=${encodeURIComponent(repo.default_branch)}&per_page=1`, true, true);
+      const commits = await gh(`/repos/${repo.full_name}/commits?sha=${encodeURIComponent(repo.default_branch)}&per_page=1`, true, true);
       if (!commits?.length) continue;
       const commit = commits[0];
       const updated = commit.commit.committer.date;
@@ -76,11 +76,11 @@ export async function collectResearchStatus({ user, token = process.env.RESEARCH
       const file = await gh(`/repos/${repo.full_name}/contents/${statePath}?ref=${encodeURIComponent(commit.sha)}`, true);
       if (!file || file.type !== 'file' || file.encoding !== 'base64' || file.size > 100000) continue;
       const stage = parseResearchState(Buffer.from(file.content, 'base64').toString('utf8'));
-      if (stage) candidates.push({ ...stage, updated });
+      if (stage) candidates.push({ ...stage, updated, context: repo.private ? 'private' : repo.name || repo.full_name.split('/')[1] });
     }
   }));
   candidates.sort((a, b) => Date.parse(b.updated) - Date.parse(a.updated));
   if (!candidates.length) return unavailable;
   const latest = candidates[0];
-  return { title: 'Recent research focus', message: latest.message, detail: `State updated ${latest.updated.slice(0, 10)} UTC` };
+  return { title: 'Recent task', message: latest.message, context: latest.context, detail: `Latest commit ${latest.updated.slice(0, 16).replace('T', ' ')} UTC` };
 }
