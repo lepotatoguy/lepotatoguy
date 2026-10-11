@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/lepotatoguy"><img src="https://komarev.com/ghpvc/?username=lepotatoguy&amp;color=blueviolet&amp;style=flat-square" alt="Profile Views"></a>
+  <a href="https://wakatime.com/@codeperfectplus"><img src="https://wakatime.com/badge/user/96547f61-7185-4dff-8afa-c81c6df21320.svg?style=flat-square" alt="Wakatime"></a>
   <a href="https://lepotatoguy.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-0969DA?style=flat-square" alt="portfolio"></a>
   <a href="https://scholar.google.com/citations?user=lIwU1F0AAAAJ&amp;hl=en"><img src="https://img.shields.io/badge/GOOGLE_SCHOLAR-0969DA?style=flat-square" alt="Google Scholar"></a>
   <a href="https://github.com/lepotatoguy"><img src="https://img.shields.io/badge/GITHUB-0969DA?style=flat-square" alt="GitHub"></a>
