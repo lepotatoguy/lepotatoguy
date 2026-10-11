@@ -13,6 +13,7 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { collectResearchStatus, formatCentralTime } from "./research-status.mjs";
+import { collectRepositoryCount } from "./repository-count.mjs";
 
 const USER = "lepotatoguy";
 
@@ -94,7 +95,9 @@ async function collect() {
     if (p.star) stars[p.key] = (await gh(`/repos/${p.star}`)).stargazers_count;
 
   const researchStatus = await collectResearchStatus({ user: USER });
-  return { researchStatus, checkedAt: now, contributions: totalContrib, repos: profile.public_repos, followers: profile.followers, since: created, days, streak: currentStreak(calendar), stars };
+  const repositoryCount = await collectRepositoryCount({ user: USER });
+  if (!repositoryCount) console.warn("RESEARCH_STATUS_TOKEN missing: repository count unavailable");
+  return { researchStatus, checkedAt: now, contributions: totalContrib, repos: repositoryCount?.total ?? "n/a", followers: profile.followers, since: created, days, streak: currentStreak(calendar), stars };
 }
 
 // Current streak = consecutive days with at least one contribution, counting
@@ -203,7 +206,7 @@ const statFlame = (t, x) =>
 const statBlock = (t) => {
   const stats = [
     { label: "contributions", value: t.contrib, cap: t.since },
-    { label: "repositories", value: t.repos, cap: "public" },
+    { label: "repositories", value: t.repos, cap: "public + private" },
     { label: "followers", value: t.followers, cap: "and counting" },
     { label: "streak", value: t.streak, cap: "days in a row", flame: true },
   ];

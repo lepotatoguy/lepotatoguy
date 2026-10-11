@@ -64,3 +64,9 @@ The relay sends no repository names, commit messages or file contents. GitHub qu
 Source: [GitHub workflow dispatch permissions](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event).
 
 Footer timestamps use America/Chicago, automatically switching between CST and CDT, including local date rollover. Every viewer sees this same Central Time. Formatting uses built-in Intl support in the existing generator; no additional service or dependency.
+
+## Telemetry repository total
+
+The repository count includes all owned non-forked repositories accessible to RESEARCH_STATUS_TOKEN, public and private, including archived repositories. A fork counts once when a current branch contains a commit authored by lepotatoguy after that fork was created. Current branch histories are queried in batches of 100 through GraphQL, with author and creation-date filters. The creation cutoff excludes inherited fork history; simply forking does not qualify. Deleted branches or commits absent from GitHub cannot be checked. This is a commit-based measure of work, not a measure of issues, stars or uncommitted edits.
+
+The existing Contents-read token supplies commit access. Only the total appears publicly. Missing token displays n/a; failed API calls stop generation before writes. Language percentages retain their existing non-forked-only rule.

@@ -18,6 +18,7 @@ on:
       - ".github/scripts/gen-telemetry.mjs"
       - ".github/scripts/gen-languages.mjs"
       - ".github/scripts/research-status.mjs"
+      - ".github/scripts/repository-count.mjs"
       - ".github/workflows/telemetry.yml"
 
 permissions:
