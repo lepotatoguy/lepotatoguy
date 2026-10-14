@@ -18,10 +18,10 @@
 </style>
 <text x="10" y="26" font-size="12" fill="#0969da" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">04: telemetry</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#d0d7de" stroke-width="1"/>
 <text x="30" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">contributions</text>
-<text x="30" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">1,324</text>
+<text x="30" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">1,328</text>
 <text x="30" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">since may 2018</text>
 <text x="155" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">repositories</text>
-<text x="155" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">106</text>
+<text x="155" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">107</text>
 <text x="155" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">public + private</text>
 <text x="280" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">followers</text>
 <text x="280" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">53</text>
@@ -31,10 +31,10 @@
 <text x="405" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">2</text>
 <text x="405" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">days in a row</text>
 <text x="540" y="92" font-size="11" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="2">contributions · 28 days</text>
-<polyline class="draw" pathLength="700" points="540,119.89473684210526 551.8518518518518,114.42105263157895 563.7037037037037,124 575.5555555555555,98 587.4074074074074,144.52631578947367 599.2592592592592,140.42105263157896 611.1111111111111,139.05263157894737 622.9629629629629,145.89473684210526 634.8148148148148,150 646.6666666666666,150 658.5185185185185,115.78947368421052 670.3703703703704,117.15789473684211 682.2222222222222,145.89473684210526 694.0740740740741,150 705.9259259259259,136.31578947368422 717.7777777777778,150 729.6296296296296,141.78947368421052 741.4814814814815,150 753.3333333333334,145.89473684210526 765.1851851851852,150 777.0370370370371,150 788.8888888888889,133.57894736842104 800.7407407407408,130.8421052631579 812.5925925925926,137.68421052631578 824.4444444444445,130.8421052631579 836.2962962962963,150 848.1481481481482,148.6315789473684 860,147.26315789473685" fill="none" stroke="#0969da" stroke-width="1.5"/>
-<circle class="ping" cx="860" cy="147.26315789473685" r="6" fill="none" stroke="#0969da" stroke-width="1"/>
-<circle cx="860" cy="147.26315789473685" r="2.5" fill="#0969da"/>
-<text x="540" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="start">09-16</text>
-<text x="694.0740740740741" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="middle">09-29</text>
-<text x="860" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="end">10-13</text>
+<polyline class="draw" pathLength="700" points="540,114.42105263157895 551.8518518518518,124 563.7037037037037,98 575.5555555555555,144.52631578947367 587.4074074074074,140.42105263157896 599.2592592592592,139.05263157894737 611.1111111111111,145.89473684210526 622.9629629629629,150 634.8148148148148,150 646.6666666666666,115.78947368421052 658.5185185185185,117.15789473684211 670.3703703703704,145.89473684210526 682.2222222222222,150 694.0740740740741,136.31578947368422 705.9259259259259,150 717.7777777777778,141.78947368421052 729.6296296296296,150 741.4814814814815,145.89473684210526 753.3333333333334,150 765.1851851851852,150 777.0370370370371,133.57894736842104 788.8888888888889,130.8421052631579 800.7407407407408,137.68421052631578 812.5925925925926,130.8421052631579 824.4444444444445,150 836.2962962962963,148.6315789473684 848.1481481481482,141.78947368421052 860,150" fill="none" stroke="#0969da" stroke-width="1.5"/>
+<circle class="ping" cx="860" cy="150" r="6" fill="none" stroke="#0969da" stroke-width="1"/>
+<circle cx="860" cy="150" r="2.5" fill="#0969da"/>
+<text x="540" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="start">09-17</text>
+<text x="694.0740740740741" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="middle">09-30</text>
+<text x="860" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="end">10-14</text>
 </svg>
