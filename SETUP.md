@@ -28,7 +28,9 @@ Sources: [GitHub language API permissions](https://docs.github.com/en/rest/repos
 
 ## Automated research footer
 
-The footer reads research/STATE.md from the default branch of each accessible owned repository. It chooses the repository with the latest default-branch commit and a recognized stage. The ledger is read at that exact commit. Private repositories display @ private; public repositories display their name. Commit messages are not published. Forks, archived repositories and the profile repository are excluded.
+The footer shows the most recent own commit across accessible owned repositories and worked-in forks. For each repository it takes the newest non-merge, non-bot commit on the default branch authored by lepotatoguy (matched by login, or by the account email when GitHub could not link the commit). A fork qualifies only when its default branch has such a commit that the upstream parent lacks, checked with the compare API; if the parent is gone or the comparison is unavailable, only own commits made after the fork was created count. Forks that were only forked, archived repositories and the profile repository are excluded.
+
+Public repositories display their name and a short summary of the commit subject: first line only, conventional-commit types, task ids and PR references removed, a leading verb turned into its -ing form (for example, fix: M5.3: highlight selected text becomes Highlighting selected text), cut on a word boundary at 48 characters. Private repositories display @ private and a fixed label: the research/STATE.md stage when one is recognized, otherwise the commit type (Fixing bugs, Building features and so on) or Working. Private commit messages and names are never published.
 
 One-time setup:
 
@@ -37,13 +39,11 @@ One-time setup:
 3. Optionally add RESEARCH_STATUS_REPOS as another secret containing comma-separated owner/repository pairs. This limits the scan, supports repositories you collaborate on, and avoids putting private repository names in public configuration. When omitted, all accessible owned repositories are checked.
 4. Run telemetry once. Future runs refresh daily. Replace the token secret when it expires.
 
-The reader accepts explicit stage, current_stage, pipeline_stage or phase fields, including Markdown bullets and bold formatting. Recognized values: lit-review, gap-analysis, experiment-design, experiment-explore, experiment-run, writeup and revision. The research workflow maintains those fields; the footer does not edit or advance your pipeline.
+For private repositories the reader accepts explicit stage, current_stage, pipeline_stage or phase fields in research/STATE.md, including Markdown bullets and bold formatting. Recognized values: lit-review, gap-analysis, experiment-design, experiment-explore, experiment-run, writeup and revision. A done/completed state uses completed wording; paused or blocked states use generic labels. The footer does not edit or advance your pipeline. Private repository names, paper titles, findings, commit messages and state-file text are never written to the profile or logs.
 
-A done/completed state uses completed wording; paused or blocked states use generic labels. Unknown or ambiguous stages are skipped. Only fixed stage phrases, commit dates and public repository names are published. Private repositories use @ private. Private repository names, paper titles, findings, commit messages and state-file text are never written to the profile or logs.
+Without RESEARCH_STATUS_TOKEN, daily runs preserve the packaged footer and its original check date. With a configured token but no own commit found, the footer says Workflow state unavailable. A failed API request stops the refresh before assets are written, preserving the published footer. The last source-update date remains visible, so old stages are not presented as newly updated work. The date of the last bot check remains.
 
-Without RESEARCH_STATUS_TOKEN, daily runs preserve the packaged footer and its original check date. With a configured token but no recognized pushed state, the footer says Workflow state unavailable. A failed API request stops the refresh before assets are written, preserving the published footer. The last source-update date remains visible, so old stages are not presented as newly updated work. The date of the last bot check remains.
-
-Local verification used Joy's existing GitHub authentication. Actions requires the secrets above. Reading private ledgers requires broader access than the Metadata-only language collector; keep these secrets separate.
+Local verification used Joy's existing GitHub authentication. Actions requires the secrets above. Reading commits and private ledgers requires broader access than the Metadata-only language collector; keep these secrets separate. The token needs Contents read on owned repositories and forks (All repositories, as the repository count already assumes). Optional Email addresses read lets the footer match commits GitHub did not link to the login; without it, only the public and noreply emails are used.
 
 Sources: [GitHub content API](https://docs.github.com/en/rest/repos/contents#get-repository-content), [GitHub commit API](https://docs.github.com/en/rest/commits/commits#list-commits).
 

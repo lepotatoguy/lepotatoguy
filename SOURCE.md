@@ -18,6 +18,6 @@ language_revision: original GitHub Stats Extended 2.2.0 compact renderer, pinned
 language_source: https://github.com/stats-organization/github-stats-extended/tree/master/packages/core; npm @stats-organization/github-readme-stats-core@2.2.0 (MIT)
 private_access: local generation uses existing authenticated gh access; future Actions runs need LANGUAGE_STATS_TOKEN with Metadata read for selected private repositories
 latest_bio_revision: profile views first; interests removed; domains use standard research fields from selected publications; research portfolio link removed, Google Scholar retained
-research_status_revision: footer now reads explicit workflow stage from latest committed research/STATE.md across accessible selected repositories; publishes generic allowlisted stage and source date only; no public activity fallback
+research_status_revision: footer shows the latest own non-merge commit across owned repositories and worked-in forks (own commits ahead of the parent); public repos publish a deterministic subject summary and name; private repos publish @ private with a ledger stage or commit-type label only
 research_status_access: separate RESEARCH_STATUS_TOKEN secret with Contents read; optional RESEARCH_STATUS_REPOS secret scopes scan without exposing private repository names
 missing_secrets: daily workflow preserves packaged private-language cards and research footer until their separate tokens are configured

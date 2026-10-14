@@ -3,7 +3,7 @@
 //   assets/telemetry.svg         : counts, contribution streak + activity-pulse curve (GitHub contributions)
 //   assets/activity.svg          : daily contribution graph (last 26 weeks)
 //   assets/ecosystem.svg        : chosen map areas and hidden ratings
-//   assets/footer.svg           : most recently committed research stage
+//   assets/footer.svg           : most recent own commit, summarized (private repos: generic label)
 // Layout adapted from the original Sakif16 SVG panels.
 //
 // Requires env GITHUB_TOKEN (the workflow passes the built-in token). Zero deps.
@@ -331,7 +331,7 @@ ${axes.map((a) => `<circle cx="${coordinate(440 + 190 * a.score / 10 * a.dx)}" c
 `;
 }
 
-// Keep the original footer layout, publishing only generic workflow state.
+// Keep the original footer layout; the collector supplies only summarized task text.
 const shortText = (s, max) => [...s].length > max ? [...s].slice(0, max - 3).join("") + "..." : s;
 const footerSVG = (c, status, checked) => `${svgOpen(108, c)}
 <line x1="10" y1="12" x2="870" y2="12" stroke="${c.line}" stroke-width="1"/>
