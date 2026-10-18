@@ -18,23 +18,23 @@
 </style>
 <text x="10" y="26" font-size="12" fill="#0969da" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">04: telemetry</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#d0d7de" stroke-width="1"/>
 <text x="30" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">contributions</text>
-<text x="30" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">1,390</text>
+<text x="30" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">1,422</text>
 <text x="30" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">since may 2018</text>
 <text x="155" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">repositories</text>
-<text x="155" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">108</text>
+<text x="155" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">109</text>
 <text x="155" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">public + private</text>
 <text x="280" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">followers</text>
 <text x="280" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">51</text>
 <text x="280" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">and counting</text>
 <text x="405" y="92" font-size="10" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="1.2">streak</text>
 <g transform="translate(384 104)"><g class="flame"><path d="M8 0C12.4 4.4 15 8 15 13C15 18.4 11.9 24 8 24C4.1 24 1 18.4 1 13C1 9.6 2.6 7.2 4.2 5.2C4.4 7.6 5.4 9 7.4 9.6C6.9 6.4 7 2.8 8 0Z" fill="#C1121F"/><path class="flame-core" d="M8 11.4C10.4 14.4 11.2 16.2 11.2 18C11.2 20.6 9.8 22.2 8 22.2C6.2 22.2 4.8 20.6 4.8 18C4.8 15.8 6.2 13.4 8 11.4Z" fill="#F76707"/></g></g>
-<text x="405" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">6</text>
+<text x="405" y="128" font-size="27" fill="#0d1117" font-weight="700" text-anchor="start">7</text>
 <text x="405" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">days in a row</text>
 <text x="540" y="92" font-size="11" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="2">contributions · 28 days</text>
-<polyline class="draw" pathLength="700" points="540,141.68 551.8518518518518,135.44 563.7037037037037,133.36 575.5555555555555,143.76 587.4074074074074,150 599.2592592592592,150 611.1111111111111,98 622.9629629629629,100.08 634.8148148148148,143.76 646.6666666666666,150 658.5185185185185,129.2 670.3703703703704,150 682.2222222222222,137.52 694.0740740740741,150 705.9259259259259,143.76 717.7777777777778,150 729.6296296296296,150 741.4814814814815,125.03999999999999 753.3333333333334,120.88 765.1851851851852,131.28 777.0370370370371,120.88 788.8888888888889,150 800.7407407407408,147.92 812.5925925925926,137.52 824.4444444444445,100.08 836.2962962962963,108.4 848.1481481481482,116.72 860,145.84" fill="none" stroke="#0969da" stroke-width="1.5"/>
-<circle class="ping" cx="860" cy="145.84" r="6" fill="none" stroke="#0969da" stroke-width="1"/>
-<circle cx="860" cy="145.84" r="2.5" fill="#0969da"/>
-<text x="540" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="start">09-20</text>
-<text x="694.0740740740741" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="middle">10-03</text>
-<text x="860" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="end">10-17</text>
+<polyline class="draw" pathLength="700" points="540,137.86666666666667 551.8518518518518,136.13333333333333 563.7037037037037,144.8 575.5555555555555,150 587.4074074074074,150 599.2592592592592,106.66666666666666 611.1111111111111,108.4 622.9629629629629,144.8 634.8148148148148,150 646.6666666666666,132.66666666666666 658.5185185185185,150 670.3703703703704,139.6 682.2222222222222,150 694.0740740740741,144.8 705.9259259259259,150 717.7777777777778,150 729.6296296296296,129.2 741.4814814814815,125.73333333333333 753.3333333333334,134.4 765.1851851851852,125.73333333333333 777.0370370370371,150 788.8888888888889,148.26666666666668 800.7407407407408,139.6 812.5925925925926,108.4 824.4444444444445,115.33333333333334 836.2962962962963,122.26666666666667 848.1481481481482,98 860,143.06666666666666" fill="none" stroke="#0969da" stroke-width="1.5"/>
+<circle class="ping" cx="860" cy="143.06666666666666" r="6" fill="none" stroke="#0969da" stroke-width="1"/>
+<circle cx="860" cy="143.06666666666666" r="2.5" fill="#0969da"/>
+<text x="540" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="start">09-21</text>
+<text x="694.0740740740741" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="middle">10-04</text>
+<text x="860" y="164" font-size="7" fill="#57606a" font-weight="400" text-anchor="end">10-18</text>
 </svg>
