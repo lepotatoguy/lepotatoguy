@@ -18,7 +18,7 @@
 </style>
 <text x="10" y="26" font-size="12" fill="#58a6ff" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">04: telemetry</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
 <text x="30" y="92" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="1.2">contributions</text>
-<text x="30" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">1,474</text>
+<text x="30" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">1,481</text>
 <text x="30" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">since may 2018</text>
 <text x="155" y="92" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="1.2">repositories</text>
 <text x="155" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">113</text>
@@ -31,10 +31,10 @@
 <text x="405" y="128" font-size="27" fill="#e6edf3" font-weight="700" text-anchor="start">13</text>
 <text x="405" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">days in a row</text>
 <text x="540" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">contributions · 28 days</text>
-<polyline class="draw" pathLength="700" points="540,108.4 551.8518518518518,144.8 563.7037037037037,150 575.5555555555555,132.66666666666666 587.4074074074074,150 599.2592592592592,139.6 611.1111111111111,150 622.9629629629629,144.8 634.8148148148148,150 646.6666666666666,150 658.5185185185185,129.2 670.3703703703704,125.73333333333333 682.2222222222222,134.4 694.0740740740741,125.73333333333333 705.9259259259259,150 717.7777777777778,148.26666666666668 729.6296296296296,139.6 741.4814814814815,108.4 753.3333333333334,115.33333333333334 765.1851851851852,122.26666666666667 777.0370370370371,98 788.8888888888889,108.4 800.7407407407408,137.86666666666667 812.5925925925926,134.4 824.4444444444445,137.86666666666667 836.2962962962963,148.26666666666668 848.1481481481482,141.33333333333334 860,144.8" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
-<circle class="ping" cx="860" cy="144.8" r="6" fill="none" stroke="#58a6ff" stroke-width="1"/>
-<circle cx="860" cy="144.8" r="2.5" fill="#58a6ff"/>
-<text x="540" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="start">09-27</text>
-<text x="694.0740740740741" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="middle">10-10</text>
-<text x="860" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="end">10-24</text>
+<polyline class="draw" pathLength="700" points="540,144.8 551.8518518518518,150 563.7037037037037,132.66666666666666 575.5555555555555,150 587.4074074074074,139.6 599.2592592592592,150 611.1111111111111,144.8 622.9629629629629,150 634.8148148148148,150 646.6666666666666,129.2 658.5185185185185,125.73333333333333 670.3703703703704,134.4 682.2222222222222,125.73333333333333 694.0740740740741,150 705.9259259259259,148.26666666666668 717.7777777777778,139.6 729.6296296296296,108.4 741.4814814814815,115.33333333333334 753.3333333333334,122.26666666666667 765.1851851851852,98 777.0370370370371,108.4 788.8888888888889,137.86666666666667 800.7407407407408,134.4 812.5925925925926,137.86666666666667 824.4444444444445,148.26666666666668 836.2962962962963,141.33333333333334 848.1481481481482,132.66666666666666 860,150" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+<circle class="ping" cx="860" cy="150" r="6" fill="none" stroke="#58a6ff" stroke-width="1"/>
+<circle cx="860" cy="150" r="2.5" fill="#58a6ff"/>
+<text x="540" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="start">09-28</text>
+<text x="694.0740740740741" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="middle">10-11</text>
+<text x="860" y="164" font-size="7" fill="#8b949e" font-weight="400" text-anchor="end">10-25</text>
 </svg>
