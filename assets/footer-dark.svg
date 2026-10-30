@@ -17,8 +17,8 @@
 @keyframes ember{0%,100%{opacity:.75;transform:scale(.9)}45%{opacity:1;transform:scale(1.08)}}
 </style>
 <line x1="10" y1="12" x2="870" y2="12" stroke="#30363d" stroke-width="1"/>
-<text x="30" y="56" font-size="14" fill="#e6edf3" font-weight="600">Recent task: Working (@ private)</text>
-<text x="30" y="84" font-size="11" fill="#8b949e">Latest commit 2026-10-28 22:45 CDT · checked 2026-10-29 CDT · automatic refresh</text>
+<text x="30" y="56" font-size="14" fill="#e6edf3" font-weight="600">Recent task: Updating research areas, interests… (@ lepotatoguy.github.io)</text>
+<text x="30" y="84" font-size="11" fill="#8b949e">Latest commit 2026-10-29 23:49 CDT · checked 2026-10-30 CDT · automatic refresh</text>
 <circle class="ping" cx="850" cy="52" r="6" fill="none" stroke="#58a6ff"/>
 <circle cx="850" cy="52" r="2.5" fill="#58a6ff"/>
 </svg>
