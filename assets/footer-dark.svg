@@ -17,8 +17,8 @@
 @keyframes ember{0%,100%{opacity:.75;transform:scale(.9)}45%{opacity:1;transform:scale(1.08)}}
 </style>
 <line x1="10" y1="12" x2="870" y2="12" stroke="#30363d" stroke-width="1"/>
-<text x="30" y="56" font-size="14" fill="#e6edf3" font-weight="600">Recent task: Building forecast a demand-weighted daily… (@ token_observatory)</text>
-<text x="30" y="84" font-size="11" fill="#8b949e">Latest commit 2026-11-06 14:05 CST · checked 2026-11-07 CST · automatic refresh</text>
+<text x="30" y="56" font-size="14" fill="#e6edf3" font-weight="600">Recent task: Identifying research gaps (@ private)</text>
+<text x="30" y="84" font-size="11" fill="#8b949e">Latest commit 2026-11-08 05:29 CST · checked 2026-11-08 CST · automatic refresh</text>
 <circle class="ping" cx="850" cy="52" r="6" fill="none" stroke="#58a6ff"/>
 <circle cx="850" cy="52" r="2.5" fill="#58a6ff"/>
 </svg>
